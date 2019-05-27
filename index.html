@@ -1,50 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Currículo Daniel Cavalcante</title>
-    <style>
-    body {
-  background-color: rgb(255, 214, 101);
-}
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Calculadora de IMC</title>
+    
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Cálculo de IMC</h1>
+    <form class="container" id="formulario">
+        <div class="col-md-5">
+         
+            <legend>Verifique seu IMC preenchendo as informações abaixo</legend>
+            <label for="peso">Peso:</label>
+            <input type="text" name="peso" class="form-control" />
+            
+            <label for="metros">Metros:</label>
+            <input type="text" name="metros" class="form-control" />
+            
+            <label for="centimetros">Centímetros:</label>
+            <input type="text" name="centimetros" class="form-control" />
+            
+            <label for="imc">IMC:</label>
+            <input type="text" name="imc" class="form-control" disabled="" />
+            
+            <p></p><button type="button" class="btn btn-warning" onclick="calcularIMC();">Calcular</button>
+          
+        </div>
+      </form>
 
-h1 {
-  color: rgb(138, 0, 0);
-  margin-left: 30px;
-} 
-
-P {
-    margin-left: 60px;
-}
-
-a {
-    margin-left: 60px;
-}
-
-h2 {
-    margin-left: 25px;
-}
-
-h3 {
-    color:navy;
-    margin-left: 25px;
-}
-    </style>
-</head>
-
-<body>
-    <h1>Daniel Almeida Cavalcante</h1>
-
-    <p><b>Brasileiro, solteiro 23 anos</b>.</p>
-    <p><b>Telefone: (62) 9 9654-9574</b></p>
-    <p><b>E-mail: daniel.almeida.cavalcante@gmail.com</b></p>
-    <a href="https://www.linkedin.com/in/daniel-cavalcante-986142163">LINKEDIN</a>
-
-    <h2><b>Experiência:</b></h2>
-    <h3><b>Máxima Sistemas</b></h3>
-    <p>Estagiário de suporte (11/2016 - 05/2017)</p>
-    <p>Analista de suporte N1 (06/2017 - 12/2018)</p>
-    <p>Analista de suporte N2 (01/2019 - <b>Atual</b>)</p>
-
-</body>
-</html> 
+  </body>
+</html>
