@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+
   <head>
       <meta charset="UTF-8">
     <link rel="stylesheet" href="Style.css">
@@ -11,9 +11,7 @@
       var formulario = document.getElementById("formulario");
       
       var peso = +formulario.peso.value;
-      var metros = +formulario.metros.value;
-      var centimetros = +formulario.centimetros.value;
-      var altura = (metros * 100 + centimetros)/100;
+      var altura = +formulario.peso.value;
       var imc = peso / (altura * altura);
   
       if (imc < 17) {
@@ -37,10 +35,9 @@
       else if (imc > 40) {
           alert("Obesidade Grau 3");
       }
-      formulario.imc.value = imc.toFixed(2);
+      formulario.imc.value = imc.toFixed(2);}
   
-      
-    }</script>
+    </script>
   </head>
   <body>
     <h1>Cálculo de IMC</h1>
@@ -49,13 +46,11 @@
          
             <legend>Verifique seu IMC preenchendo as informações abaixo</legend>
             <label for="peso">Peso:</label>
-            <input type="text" name="peso" class="form-control" />
+            <input type="text" name="peso" placeholder="Coloque seu peso com ponto Ex.: 55.5" class="form-control" />
             
-            <label for="metros">Metros:</label>
-            <input type="text" name="metros" class="form-control" />
+            <label for="altura">Altura:</label>
+            <input type="text" name="altura" placeholder="Coloque sua altura com ponto Ex.: 1.70" class="form-control" />
             
-            <label for="centimetros">Centímetros:</label>
-            <input type="text" name="centimetros" class="form-control" />
             
             <label for="imc">IMC:</label>
             <input type="text" name="imc" class="form-control" disabled="" />
